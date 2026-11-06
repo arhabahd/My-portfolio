@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal Portfolio of M. Arhab Ahamed - Physical Science Undergraduate at SEUSL and BIT (External) Undergraduate at University of Moratuwa." />
+  <meta name="keywords" content="M. Arhab Ahamed, Arhab Ahamed, Portfolio, Physical Science SEUSL, BIT Moratuwa, Web Developer, Java, Python, JavaScript" />
+  <meta name="author" content="M. Arhab Ahamed" />
+  <title>M. Arhab Ahamed | Developer & Undergraduate Portfolio</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons for developer & social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-symbol">&lt;</span>Arhab Ahamed<span class="logo-accent">.dev</span><span class="logo-symbol">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-action">
+          <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <img src="Arhab-Portfolio/arhabimg.jpeg" alt="M. Arhab Ahamed" class="hero-avatar-mini" onerror="this.onerror=null; this.src='images/profile.svg';" />
+            <span class="pulse-dot"></span>
+            <span>Available for Opportunities & Projects</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">M. Arhab Ahamed</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span class="code-bracket">&lt;</span>
+            <span class="typing-text" id="typing-text">Physical Science & IT Undergraduate</span>
+            <span class="code-bracket">/&gt;</span>
+          </p>
+          <p class="hero-description">
+            Passionate about crafting clean software, elegant web applications, and solving real-world problems. 
+            Currently pursuing dual academic pathways at <strong>SEUSL</strong> and <strong>University of Moratuwa (BIT)</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-code-branch"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-envelope"></i> Contact Me
+            </a>
+          </div>
+
+          <!-- Hero Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect with me:</span>
+            <div class="social-links-inline">
+              <a href="https://github.com/arhabahd" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/arhabahamed" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:arhabahamed2005@example.com" class="social-icon-btn" aria-label="Send Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Developer Code Editor Illustration -->
+        <div class="hero-visual">
+          <div class="code-editor-card">
+            <!-- Window Titlebar -->
+            <div class="editor-header">
+              <div class="editor-controls">
+                <span class="control-dot close-dot"></span>
+                <span class="control-dot min-dot"></span>
+                <span class="control-dot max-dot"></span>
+              </div>
+              <div class="editor-tabs">
+                <div class="editor-tab active">
+                  <i class="fa-brands fa-js tab-icon"></i>
+                  <span>developer.js</span>
+                </div>
+                <div class="editor-tab">
+                  <i class="fa-solid fa-gear tab-icon"></i>
+                  <span>profile.json</span>
+                </div>
+              </div>
+              <button class="editor-copy-btn" id="copy-code-btn" aria-label="Copy Code Snippet" title="Copy code snippet">
+                <i class="fa-regular fa-copy"></i>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+
+            <!-- Code Content Body with Line Numbers -->
+            <div class="editor-body">
+              <pre class="code-block"><code><span class="line-num">01</span><span class="token-keyword">const</span> <span class="token-variable">developer</span> <span class="token-operator">=</span> {
+<span class="line-num">02</span>  <span class="token-property">name</span>: <span class="token-string">"M. Arhab Ahamed"</span>,
+<span class="line-num">03</span>  <span class="token-property">education</span>: [
+<span class="line-num">04</span>    <span class="token-string">"B.Sc. Physical Science @ SEUSL"</span>,
+<span class="line-num">05</span>    <span class="token-string">"BIT (External) @ UoM "</span>
+<span class="line-num">06</span>  ],
+<span class="line-num">07</span>  <span class="token-property">coreSkills</span>: [
+<span class="line-num">08</span>    <span class="token-string">"HTML"</span>, <span class="token-string">"CSS"</span>, <span class="token-string">"JavaScript"</span>,
+<span class="line-num">09</span>    <span class="token-string">"Java"</span>, <span class="token-string">"Python"</span>
+<span class="line-num">10</span>  ],
+<span class="line-num">11</span>  <span class="token-property">focusAreas</span>: [<span class="token-string">"Web Development"</span>, <span class="token-string">"Software Eng"</span>],
+<span class="line-num">12</span>  <span class="token-property">hardWorker</span>: <span class="token-boolean">true</span>,
+<span class="line-num">13</span>  <span class="token-property">readyToLearn</span>: <span class="token-boolean">true</span>,
+<span class="line-num">14</span>  <span class="token-function-def">buildSolution</span>() {
+<span class="line-num">15</span>    <span class="token-keyword">return</span> <span class="token-string">"Turning ideas into clean code 🚀"</span>;
+<span class="line-num">16</span>  }
+<span class="line-num">17</span>};</code></pre>
+            </div>
+
+            <!-- Editor Status Bar -->
+            <div class="editor-footer">
+              <div class="status-left">
+                <span><i class="fa-solid fa-code-branch"></i> main*</span>
+                <span><i class="fa-solid fa-circle-check"></i> 0 errors</span>
+              </div>
+              <div class="status-right">
+                <span>JavaScript</span>
+                <span>UTF-8</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Decorative Tech Badges -->
+          <div class="floating-badge badge-top-right">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <span class="badge-title">Dual Degree</span>
+              <span class="badge-sub">SEUSL &amp; UoM</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-bottom-left">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div>
+              <span class="badge-title">Tech Stack</span>
+              <span class="badge-sub">Java • Python • JS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Bridging Science, Math &amp; Computing</h2>
+          <p class="section-subtitle">
+            A driven undergraduate blending analytical problem solving with modern software engineering.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Profile Card & Key Stats -->
+          <div class="about-card-left">
+            <div class="avatar-card">
+              <div class="avatar-wrapper">
+                <!-- Profile Picture: Save your photo as 'images/profile.jpg' or 'images/profile.png' -->
+                <img 
+                  src="Arhab-Portfolio/arhabimg.jpeg" 
+                  alt="M. Arhab Ahamed Profile Picture" 
+                  class="avatar-img" 
+                  id="avatar-img" 
+                  onerror="this.onerror=null; this.src='images/profile.svg';" 
+                />
+                <div class="avatar-badge" title="Developer">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+              </div>
+              <h3 class="avatar-name">M. Arhab Ahamed</h3>
+              <p class="avatar-title">Undergraduate &amp; Developer</p>
+              <div class="avatar-divider"></div>
+              <ul class="quick-facts-list">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Sri Lanka</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-building-columns"></i>
+                  <span>SEUSL &amp; UoM</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>arhabahamed2005@email.com</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-success"></i>
+                  <span>Open to Collaborations</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column: Story & Highlights -->
+          <div class="about-content-right">
+            <h3 class="about-heading">Hello! I'm Arhab Ahamed</h3>
+            <p class="about-text">
+              I am currently pursuing a <strong>Bachelor of Science in Physical Science</strong> at the 
+              <strong>South Eastern University of Sri Lanka (SEUSL)</strong>, while concurrently reading for the 
+              <strong>Bachelor of Information Technology (BIT - External)</strong> at the prestigious 
+              <strong>University of Moratuwa</strong>.
+            </p>
+            <p class="about-text">
+              This unique combination empowers me with a rigorous foundation in mathematics, analytical thinking, 
+              and computational physics, paired with practical, industry-standard computer science principles, 
+              software architecture, and modern programming languages.
+            </p>
+            <p class="about-text">
+              Whether building dynamic web experiences with <strong>HTML, CSS, and JavaScript</strong>, writing robust 
+              object-oriented solutions in <strong>Java</strong>, or developing algorithms and scripts in <strong>Python</strong>, 
+              I strive for clean structure, scalability, and intuitive user experiences.
+            </p>
+
+            <!-- Highlights Grid -->
+            <div class="about-features-grid">
+              <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-brain"></i></div>
+                <div>
+                  <h4 class="feature-title">Analytical Thinking</h4>
+                  <p class="feature-desc">Physical science foundation for rigorous logic &amp; problem-solving.</p>
+                </div>
+              </div>
+              <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div>
+                  <h4 class="feature-title">Dual Academic Focus</h4>
+                  <p class="feature-desc">Balancing theoretical science with modern IT software development.</p>
+                </div>
+              </div>
+              <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-code-commit"></i></div>
+                <div>
+                  <h4 class="feature-title">Clean Coding</h4>
+                  <p class="feature-desc">Committed to readable, maintainable, and well-structured code.</p>
+                </div>
+              </div>
+              <div class="feature-box">
+                <div class="feature-icon"><i class="fa-solid fa-rocket"></i></div>
+                <div>
+                  <h4 class="feature-title">Eager Learner</h4>
+                  <p class="feature-desc">Always exploring new frameworks, patterns, and best practices.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resume / CTA button -->
+            <div class="about-cta">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i> Let's Connect
+              </a>
+              <a href="#skills" class="btn btn-outline">
+                <i class="fa-solid fa-wrench"></i> Explore Technical Skills
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">
+            Core technologies I use to design, develop, and deploy software solutions.
+          </p>
+        </div>
+
+        <!-- Main Skills Grid -->
+        <div class="skills-grid">
+          <!-- Skill 1: HTML5 -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrap html-icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">HTML5</h3>
+                <span class="skill-level">Semantic &amp; Modern</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Writing clean, accessible, semantic markup with modern HTML5 APIs, meta optimization, and robust structure.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Semantic UI</span>
+              <span class="tag">Accessibility</span>
+              <span class="tag">SEO Basics</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="skill-progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 2: CSS3 -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrap css-icon">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">CSS3</h3>
+                <span class="skill-level">Responsive Design</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Crafting responsive mobile-first layouts using Flexbox, CSS Grid, custom properties, animations, and clean aesthetics.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Flexbox</span>
+              <span class="tag">CSS Grid</span>
+              <span class="tag">Animations</span>
+              <span class="tag">Responsive</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="skill-progress-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 3: JavaScript -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrap js-icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">JavaScript</h3>
+                <span class="skill-level">ES6+ &amp; DOM Manipulation</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Building dynamic, interactive client-side logic, asynchronous API handling with Fetch/Promises, and event management.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">ES6+</span>
+              <span class="tag">DOM Manipulation</span>
+              <span class="tag">Async / Fetch</span>
+              <span class="tag">Events</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="skill-progress-bar" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Java -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrap java-icon">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Java</h3>
+                <span class="skill-level">OOP &amp; Core Systems</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Object-Oriented Programming (OOP), data structures, multi-class architecture, encapsulation, and desktop/enterprise basics.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">OOP Concepts</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Java SE</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="skill-progress-bar" style="width: 78%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Python -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrap python-icon">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Python</h3>
+                <span class="skill-level">Scripting &amp; Problem Solving</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Writing clean, readable scripts for scientific computations, data manipulation, algorithm challenges, and backend logic.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Data Handling</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Math/Scientific</span>
+              <span class="tag">Clean Syntax</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="skill-progress-bar" style="width: 82%;"></div>
+            </div>
+          </div>
+
+          <!-- Supporting Tools Card -->
+          <div class="skill-card tools-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrap tools-icon">
+                <i class="fa-solid fa-toolbox"></i>
+              </div>
+              <div class="skill-meta">
+                <h3 class="skill-name">Tools &amp; Workflow</h3>
+                <span class="skill-level">Development Environment</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Leveraging essential developer tools to write, test, version control, and collaborate on software projects efficiently.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Git &amp; GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Terminal</span>
+              <span class="tag">Debugging</span>
+            </div>
+            <div class="skill-progress-wrap">
+              <div class="skill-progress-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects &amp; Creations</h2>
+          <p class="section-subtitle">
+            A showcase of practical applications built using HTML, CSS, JavaScript, Java, and Python.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Student Academic Management System (Java) -->
+          <div class="project-card">
+            <div class="project-preview preview-java">
+              <div class="project-preview-overlay">
+                <span class="project-badge">Java Project</span>
+              </div>
+              <div class="preview-icon-center">
+                <i class="fa-brands fa-java"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech-stack">
+                <span>Java</span>
+                <span>OOP</span>
+                <span>File Handling</span>
+              </div>
+              <h3 class="project-title">Student Academic &amp; Grade Management System</h3>
+              <p class="project-desc">
+                A desktop-based Java application designed to record, calculate, and manage student GPA, course credits, and academic performance using modular Object-Oriented principles.
+              </p>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Automated GPA calculation &amp; grade distribution</li>
+                <li><i class="fa-solid fa-check"></i> Persistent file storage &amp; report generation</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://github.com/arhabahd/student-management-system" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+                <a href="#contact" class="project-link project-link-demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Scientific & Mathematical Computing Suite (Python) -->
+          <div class="project-card">
+            <div class="project-preview preview-python">
+              <div class="project-preview-overlay">
+                <span class="project-badge">Python Project</span>
+              </div>
+              <div class="preview-icon-center">
+                <i class="fa-brands fa-python"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech-stack">
+                <span>Python</span>
+                <span>Algorithms</span>
+                <span>Mathematics</span>
+              </div>
+              <h3 class="project-title">Computational Physics &amp; Math Solver Toolkit</h3>
+              <p class="project-desc">
+                A Python computational suite applying Physical Science formulas, statistical methods, and numerical root-finding algorithms to solve physics and mathematical problems.
+              </p>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Numerical calculus and matrix operations</li>
+                <li><i class="fa-solid fa-check"></i> Interactive CLI interface with data visualization</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://github.com/arhabahd/physics-math-toolkit" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+                <a href="#contact" class="project-link project-link-demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Interactive Responsive Portfolio Website (HTML/CSS/JS) -->
+          <div class="project-card">
+            <div class="project-preview preview-web">
+              <div class="project-preview-overlay">
+                <span class="project-badge">Web Development</span>
+              </div>
+              <div class="preview-icon-center">
+                <i class="fa-brands fa-js"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+              <h3 class="project-title">Personal Developer Portfolio &amp; Showcase</h3>
+              <p class="project-desc">
+                A modern, responsive portfolio website featuring a sleek white-and-blue theme, interactive code editor illustration, smooth navigation, and optimized mobile layout.
+              </p>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Responsive design &amp; smooth scroll animations</li>
+                <li><i class="fa-solid fa-check"></i> Interactive code playground &amp; contact system</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://github.com/arhabahd/Arhab-Portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+                <a href="#home" class="project-link project-link-demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Interactive Task & Productivity Dashboard (JS / LocalStorage) -->
+          <div class="project-card">
+            <div class="project-preview preview-app">
+              <div class="project-preview-overlay">
+                <span class="project-badge">JavaScript App</span>
+              </div>
+              <div class="preview-icon-center">
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech-stack">
+                <span>JavaScript</span>
+                <span>CSS Grid</span>
+                <span>Web APIs</span>
+              </div>
+              <h3 class="project-title">Study Planner &amp; Task Productivity Tracker</h3>
+              <p class="project-desc">
+                A lightweight client-side application designed for university students to track coursework deadlines, exam schedules, and daily milestones with persistent browser storage.
+              </p>
+              <ul class="project-features">
+                <li><i class="fa-solid fa-check"></i> Real-time task categorization and filtering</li>
+                <li><i class="fa-solid fa-check"></i> LocalStorage persistence with zero backend dependency</li>
+              </ul>
+              <div class="project-footer">
+                <a href="https://github.com/arhabahd/study-task-tracker" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fa-brands fa-github"></i> Source Code
+                </a>
+                <a href="#contact" class="project-link project-link-demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Details
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-more text-center">
+          <p class="more-text">Looking for more code samples and open-source contributions?</p>
+          <a href="https://github.com/arhabahd" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-brands fa-github"></i> Explore GitHub Repositories
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education &amp; Qualifications</h2>
+          <p class="section-subtitle">
+            Dual degree pursuits in Physical Science and Information Technology.
+          </p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- Degree 1: South Eastern University of Sri Lanka -->
+          <div class="edu-card">
+            <div class="edu-indicator">
+              <div class="edu-dot"></div>
+              <div class="edu-line"></div>
+            </div>
+            <div class="edu-content">
+              <div class="edu-header">
+                <div>
+                  <span class="edu-badge"><i class="fa-solid fa-atom"></i> Current Degree</span>
+                  <h3 class="edu-degree">Bachelor of Science in Physical Science</h3>
+                  <h4 class="edu-institution">
+                    <i class="fa-solid fa-building-columns"></i> South Eastern University of Sri Lanka (SEUSL)
+                  </h4>
+                </div>
+                <div class="edu-status">
+                  <span class="status-pill status-ongoing">Undergraduate</span>
+                </div>
+              </div>
+              <p class="edu-desc">
+                Focusing on core scientific disciplines including Mathematics, Physics, and Computer Studies. 
+                Developing high-level analytical reasoning, mathematical modeling, and systematic problem solving.
+              </p>
+              <div class="edu-highlights">
+                <div class="edu-highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Higher Mathematics &amp; Differential Equations</span>
+                </div>
+                <div class="edu-highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Computational Thinking &amp; Numerical Analysis</span>
+                </div>
+                <div class="edu-highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Physics Laboratory &amp; Analytical Research</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Degree 2: University of Moratuwa (BIT External) -->
+          <div class="edu-card">
+            <div class="edu-indicator">
+              <div class="edu-dot"></div>
+            </div>
+            <div class="edu-content">
+              <div class="edu-header">
+                <div>
+                  <span class="edu-badge"><i class="fa-solid fa-laptop-code"></i> Professional IT Degree</span>
+                  <h3 class="edu-degree">Bachelor of Information Technology (BIT - External)</h3>
+                  <h4 class="edu-institution">
+                    <i class="fa-solid fa-building-columns"></i> University of Moratuwa, Sri Lanka
+                  </h4>
+                </div>
+                <div class="edu-status">
+                  <span class="status-pill status-ongoing">Undergraduate</span>
+                </div>
+              </div>
+              <p class="edu-desc">
+                Enrolled in the renowned external degree programme offered by the University of Moratuwa, 
+                covering comprehensive IT disciplines, software engineering methodologies, web technologies, and database architecture.
+              </p>
+              <div class="edu-highlights">
+                <div class="edu-highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Software Engineering Principles &amp; OOP (Java)</span>
+                </div>
+                <div class="edu-highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Web Technologies &amp; Database Management Systems</span>
+                </div>
+                <div class="edu-highlight-item">
+                  <i class="fa-solid fa-check-circle"></i>
+                  <span>Data Structures, Algorithms &amp; Computer Networks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-subtitle">
+            Have a project in mind, an opportunity to share, or just want to say hi? My inbox is always open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Information Cards -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">Contact Information</h3>
+            <p class="contact-panel-text">
+              Feel free to reach out via email or connect with me through professional networks. I will do my best to get back to you promptly!
+            </p>
+
+            <div class="contact-items-list">
+              <!-- Direct Email Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-type">Direct Email</span>
+                  <a href="mailto:arhab.ahamed@example.com" class="contact-link">arhabahamed2005@email.com</a>
+                </div>
+                <button class="btn-copy-mail" id="copy-email-btn" title="Copy email address" aria-label="Copy email address">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-type">Location</span>
+                  <span class="contact-text">Sri Lanka</span>
+                </div>
+              </div>
+
+              <!-- Academic Status -->
+              <div class="contact-info-card">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-type">Academic Status</span>
+                  <span class="contact-text">Physical Science (SEUSL) &amp; BIT (UoM)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Direct Button -->
+            <div class="contact-email-cta">
+              <a href="mailto:arhab.ahamed@example.com?subject=Hello%20Arhab%20-%20Portfolio%20Inquiry" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane"></i> Send Direct Email
+              </a>
+            </div>
+
+            <!-- Social Links Profile Buttons -->
+            <div class="contact-socials-box">
+              <span class="social-box-title">Social Profiles</span>
+              <div class="social-buttons-grid">
+                <a href="https://www.linkedin.com/in/arhabahamed" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/arhabahd" target="_blank" rel="noopener noreferrer" class="social-btn github-btn">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-panel">
+            <h3 class="contact-panel-title">Send a Message</h3>
+            <p class="contact-panel-text">
+              Leave a message below and I will receive it directly.
+            </p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="e.g. John Doe" required />
+                  <span class="error-msg" id="name-error">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Your Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="e.g. john@example.com" required />
+                  <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject <span class="required">*</span></label>
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="e.g. Project Inquiry / Collaboration" required />
+                <span class="error-msg" id="subject-error">Please enter a subject.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" class="form-control" placeholder="Write your message here..." required></textarea>
+                <span class="error-msg" id="message-error">Please enter your message (at least 20 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                <span class="btn-loading d-none"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+              </button>
+
+              <div id="form-feedback" class="form-feedback d-none" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Professional Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-symbol">&lt;</span>Arhab Ahamed<span class="logo-accent">.dev</span><span class="logo-symbol">/&gt;</span>
+          </a>
+          <p class="footer-tagline">
+            Physical Science Undergraduate (SEUSL) &amp; BIT Undergraduate (UoM).
+            Passionate about code, science, and building modern software.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Technologies</h4>
+          <ul class="footer-nav">
+            <li><span>HTML5 &amp; CSS3</span></li>
+            <li><span>JavaScript (ES6+)</span></li>
+            <li><span>Java (Core &amp; OOP)</span></li>
+            <li><span>Python Programming</span></li>
+            <li><span>Responsive Design</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Social Profiles</h4>
+          <div class="footer-socials">
+            <a href="https://github.com/arhabahd" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/arhabahamed" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:arhabahamed2005@email.com" aria-label="Email M. Arhab Ahamed">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> <strong>M. Arhab Ahamed</strong>. All rights reserved.
+        </p>
+        <p class="footer-designed">
+          Designed with a professional white &amp; blue theme.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll back to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toast">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span class="toast-message" id="toast-message">Message copied!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
